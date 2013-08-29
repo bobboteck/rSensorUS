@@ -343,6 +343,12 @@ UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/zetex.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/zilog.lbr"
 
 [Win_1]
+Type="Control Panel"
+Loc="71 105 1193 672"
+State=0
+Number=0
+
+[Win_2]
 Type="Schematic Editor"
 Loc="375 165 974 564"
 State=0
@@ -389,12 +395,6 @@ PadsSameType=0
 Layer=91
 Views=" 1: -51.8736 -29.9681 237.294 109.834"
 Sheet=1
-
-[Win_2]
-Type="Control Panel"
-Loc="71 105 1193 672"
-State=0
-Number=0
 
 [Desktop]
 Screen="1366 768"
