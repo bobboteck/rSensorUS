@@ -219,3 +219,12 @@ pip-log.txt
 ###########
 *.s#*
 *.b#*
+#############
+## MPLAB X ##
+#############
+build/
+dist/
+nbproject/private/
+nbproject/*.mk
+nbproject/*.properties
+nbproject/*.bash
