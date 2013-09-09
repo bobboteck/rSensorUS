@@ -1,3 +1,4 @@
-_main: CODE, 65526 0 4
-__initialization: CODE, 65530 0 0
-Total: 4
+_main: CODE, 65528 0 8
+__initialization: CODE, 65522 0 0
+_BoardSettings: CODE, 65520 0 2
+Total: 10

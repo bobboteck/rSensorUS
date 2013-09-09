@@ -5,14 +5,13 @@
  * Created on 4 settembre 2013, 12.58
  */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "settings.h"
 
 /*
  * 
  */
-int main(int argc, char** argv) {
-
-    return (EXIT_SUCCESS);
+int main(void)
+{
+    BoardSettings();
+    
 }
-
