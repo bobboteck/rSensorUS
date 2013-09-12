@@ -15,3 +15,13 @@ Software develop used
 Currently the electric schema and the PCB was designed with Eagle 6.4 version, by CADSoft
 
 For the code currently used MPLAB X version 1.90 and XC8 version 1.20, by Microchip
+
+
+Now
+====
+Actualy working on Branch "Communication" to implement the Serial communication and protocol to mange the message and command received from Master
+
+
+More info
+==========
+You can see more info on project in the wiki section
