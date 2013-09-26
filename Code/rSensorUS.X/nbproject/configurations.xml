@@ -12,6 +12,10 @@
         <itemPath>parser.h</itemPath>
         <itemPath>parser.c</itemPath>
       </logicalFolder>
+      <logicalFolder name="f3" displayName="Interrupts" projectFiles="true">
+        <itemPath>interrupts.h</itemPath>
+        <itemPath>interrupts.c</itemPath>
+      </logicalFolder>
       <logicalFolder name="f1" displayName="Settings" projectFiles="true">
         <itemPath>settings.h</itemPath>
         <itemPath>settings.c</itemPath>
@@ -40,10 +44,10 @@
         <targetDevice>PIC18F2620</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>PICkit2PlatformTool</platformTool>
+        <platformTool>Simulator</platformTool>
         <languageToolchain>XC8</languageToolchain>
         <languageToolchainVersion>1.20</languageToolchainVersion>
-        <platform>2</platform>
+        <platform>3</platform>
       </toolsSet>
       <compileType>
         <linkerTool>
@@ -126,8 +130,35 @@
         <property key="opt-xc8-linker-serial" value=""/>
         <property key="program-the-device-with-default-config-words" value="true"/>
       </HI-TECH-LINK>
-      <PICkit2PlatformTool>
-      </PICkit2PlatformTool>
+      <Simulator>
+        <property key="breakoptions.coreerrors" value="Ignore"/>
+        <property key="breakoptions.corewarnings" value="Ignore"/>
+        <property key="breakoptions.peripheralerrors" value="Ignore"/>
+        <property key="breakoptions.peripheralwarnings" value="Ignore"/>
+        <property key="breakoptions.stimulusmessages.notes" value="Ignore"/>
+        <property key="breakoptions.stimulusmessags.errors" value="Ignore"/>
+        <property key="breakoptions.stimulusmessags.warnings" value="Ignore"/>
+        <property key="breakoptions.wdtwarnings" value="Ignore"/>
+        <property key="codecoverage.enabled" value="Disable"/>
+        <property key="codecoverage.enableoutputtofile" value="false"/>
+        <property key="codecoverage.outputfile" value=""/>
+        <property key="oscillator.auxfrequency" value="120"/>
+        <property key="oscillator.auxfrequencyunit" value="Mega"/>
+        <property key="oscillator.frequency" value="1"/>
+        <property key="oscillator.frequencyunit" value="Mega"/>
+        <property key="oscillator.rcfrequency" value="250"/>
+        <property key="oscillator.rcfrequencyunit" value="Kilo"/>
+        <property key="performancedata.show" value="false"/>
+        <property key="periphADC1.altscl" value="false"/>
+        <property key="periphADC1.minTacq" value=""/>
+        <property key="periphADC1.tacqunits" value="microseconds"/>
+        <property key="periphADC2.altscl" value="false"/>
+        <property key="periphADC2.minTacq" value=""/>
+        <property key="periphADC2.tacqunits" value="microseconds"/>
+        <property key="uart1io.output" value="window"/>
+        <property key="uart1io.outputfile" value=""/>
+        <property key="uart1io.uartioenabled" value="false"/>
+      </Simulator>
       <XC8-config-global>
         <property key="output-file-format" value="-mcof,+elf"/>
       </XC8-config-global>

@@ -1,3 +1,4 @@
+#include <pic18f2620.h>
 #include "settings.h"
 #include "serial.h"
 /**********************
@@ -41,5 +42,25 @@
 
 void BoardSettings(void)
 {
+    /* Initial setting of PIC, this will be overwriten than single periferical
+     * Settings function
+     */
+    ADCON1=0b00001111;
+    CMCON=0b00000111;
+    PORTA=0; PORTB=0; PORTC=0;
+    TRISA=0x00; TRISB=0x00; TRISC=0x00;
+    // Temporarily disables interrupts
+    INTCONbits.GIEH=0;      // Disable High priority Interrupt
+    INTCONbits.GIEL=0;      // Disalbe Low priority Interrupt
+    RCONbits.IPEN=1;        // Enable the Interrupt with priority
+
+    // Function to setup the EUSART module
     SerialSettings(BAUD_9600, BIT_NUMBER_8);
+
+
+
+    
+    // Enables the two priorities of interruption
+    INTCONbits.GIEH=1;
+    INTCONbits.GIEL=1;
 }
