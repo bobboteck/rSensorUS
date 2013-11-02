@@ -9,6 +9,7 @@
 #include "interrupts.h"
 #include "serial.h"
 #include "protocol.h"
+#include "parser.h"
 
 /*
  * 
@@ -21,7 +22,8 @@ int main(void)
     {
         if(protocolStatus.PacketComplete)
         {
-            //TODO: Call command parser
+            // Call command parser
+            parserMessage();
         }
         if(serialStatus.DataReceived && !protocolStatus.PacketComplete)
         {
